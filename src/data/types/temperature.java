@@ -1,5 +1,5 @@
 
-package lesson1;
+package data.types;
 
 import java.util.Scanner;
 
