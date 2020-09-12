@@ -2,21 +2,24 @@ package LoopsAndArrays;
 
 public class Contains {
 
-        public static void main(String[] args) {
-            int[] num = {1, 2, 3, 4, 5};
-            int toFind = 5;
-            boolean found = false;
-
-            for (int n : num) {
-                if (n == toFind) {
-                    found = true;
+    public static void main(String[] args) {
+        int[] array = {1, 2, 3, 4, 5, 2};
+        int k = 2;
+        for (int i = 0; i < array.length; ++i) {
+            int counter = 0;
+            for (int j = 0; j < array.length; ++j) {
+                if (array[i] == array[j]) {
+                    counter++;
+                }
+                if (counter > k-1) {
                     break;
                 }
+
+            }
+            if (counter == k) {
+                System.out.println("=" + array[i]);
             }
 
-            if(found)
-                System.out.println(toFind + " is found.");
-            else
-                System.out.println(toFind + " is not found.");
         }
     }
+}
