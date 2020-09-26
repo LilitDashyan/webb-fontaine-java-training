@@ -1,8 +1,9 @@
-package LoopsAndArrays;
+package loops.and.arrays;
 
 import java.util.Arrays;
 import java.util.Scanner;
 
+//Represent the given two-dimensional array in the same sequence of a one-dimensional array.
 public class twoDIntoOneD {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
