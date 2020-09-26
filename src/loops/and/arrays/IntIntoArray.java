@@ -1,8 +1,8 @@
-package LoopsAndArrays;
+package loops.and.arrays;
 
 import java.util.Arrays;
 import java.util.Scanner;
-
+//Write a program that will convert the entered number into an array
 public class IntIntoArray {
 
     public static void main(String[] args) {
