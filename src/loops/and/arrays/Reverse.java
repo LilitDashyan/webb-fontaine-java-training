@@ -1,8 +1,8 @@
-package LoopsAndArrays;
+package loops.and.arrays;
 
 public class Reverse {
     public static void main(String[] args) {
-        Integer[] intArray = {8, 9, 5, 100, 78};
+        int [] intArray = {8, 9, 5, 100, 78};
 
         //print array starting from last element
         System.out.println("Original Array printed in reverse order:");
