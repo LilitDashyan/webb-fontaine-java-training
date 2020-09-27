@@ -5,14 +5,17 @@ import java.util.Scanner;
 
 public class temperature {
 
-    public static void main(String[] Strings) {
+    public static void main(String[] args) {
 
-        Scanner input = new Scanner(System.in);
-
+        Scanner scanner = new Scanner(System.in);
         System.out.print("Input a degree in Fahrenheit: ");
-        double fahrenheit = input.nextDouble();
+        if(scanner.hasNextInt()) {
+        float input = scanner.nextInt();
+        float result =  5 * (input - 32)/ 9;
+        System.out.println(input + " degree Fahrenheit is equal to " + result + " in Celsius");
+    }else {
+            System.out.printf("invalid input");
 
-        double celsius = ( ( 5 * ( fahrenheit - 32.0 ) ) / 9.0 );
-        System.out.println(fahrenheit + " degree Fahrenheit is equal to " + celsius + " in Celsius");
-    }
+        }
+        }
 }
