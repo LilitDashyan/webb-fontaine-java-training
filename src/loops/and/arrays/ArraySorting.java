@@ -8,18 +8,18 @@ import java.util.Scanner;
 //Write a program that will sort the given mass in ascending and descending order. Use Math.random() method for initializing array elements.
 public class ArraySorting {
     public static void main(String[] args) {
-//        int[] toProcess = intArrayFromUserInput(5);
-        Integer[] toProcess = generateRandomArray(5);
+//        int[] array = intArrayFromUserInput(5);
+        Integer[] array = generateRandomArray(5);
         System.out.println("Initial array is");
-        System.out.println(Arrays.toString(toProcess));
+        System.out.println(Arrays.toString(array));
 
-        sortAscending(toProcess);
+        Arrays.sort(array);
         System.out.println("After sorting in ascending");
-        System.out.println(Arrays.toString(toProcess));
+        System.out.println(Arrays.toString(array));
 
-        sortDescending(toProcess);
+        Arrays.sort(array, Collections.reverseOrder());
         System.out.println("After sorting in descending order");
-        System.out.println(Arrays.toString(toProcess));
+        System.out.println(Arrays.toString(array));
     }
 
 
@@ -38,14 +38,6 @@ public class ArraySorting {
             resultArray[i] = (int) ( Math.random() * 100 );
         }
         return resultArray;
-    }
-
-    public static void sortAscending(Integer[] input) {
-        Arrays.sort(input);
-    }
-
-    public static void sortDescending(Integer[] input) {
-        Arrays.sort(input, Collections.reverseOrder());
     }
 }
     
